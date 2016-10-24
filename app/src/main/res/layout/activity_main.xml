@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -7,10 +7,71 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
     tools:context="com.example.dllo.a36kr.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
-</RelativeLayout>
+    <!--用于替换Fragment类对象的布局-->
+    <LinearLayout
+        android:id="@+id/main_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:orientation="vertical">
+    </LinearLayout>
+
+    <!--底部主菜单栏-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/main_radio_recommend"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:drawableTop="@drawable/selector_recommend"
+                android:text="首页"
+                android:textColor="@drawable/selector_tabber_text"
+                android:gravity="center"
+                />
+            <RadioButton
+                android:id="@+id/main_radio_follow"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:drawableTop="@drawable/selector_follow"
+                android:text="关注"
+                android:textColor="@drawable/selector_tabber_text"
+                android:gravity="center"/>
+            <RadioButton
+                android:id="@+id/main_radio_discover"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:drawableTop="@drawable/selector_discover"
+                android:text="发现"
+                android:textColor="@drawable/selector_tabber_text"
+                android:gravity="center"/>
+            <RadioButton
+                android:id="@+id/main_radio_mine"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:drawableTop="@drawable/selector_mine"
+                android:text="我的"
+                android:textColor="@drawable/selector_tabber_text"
+                android:gravity="center"/>
+
+        </RadioGroup>
+    </LinearLayout>
+</LinearLayout>

@@ -66,4 +66,11 @@ public abstract class BaseFragment extends Fragment{
         return (T)view.findViewById(id);
     }
 
+    // 设置各种点击事件
+    protected void setClick(View.OnClickListener onClickListener, View ... views){
+        for (View view : views) {
+            view.setOnClickListener(onClickListener);
+        }
+    }
+
 }

@@ -15,6 +15,9 @@ public abstract class BaseActivity extends AppCompatActivity{
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(getLayout());
+
+        initViews();
+        initData();
     }
 
     // 获取布局文件
@@ -29,6 +32,11 @@ public abstract class BaseActivity extends AppCompatActivity{
     // 简化 findViewById 省去强转的过程
     protected <T extends View>T bindView(int id) {
         return (T)findViewById(id);
+    }
+
+    // 方法重载, 指定在哪个 View 里 findViewById
+    protected <T extends View> T bindView(View view, int id) {
+        return (T)view.findViewById(id);
     }
 
     // 设置各种点击事件
