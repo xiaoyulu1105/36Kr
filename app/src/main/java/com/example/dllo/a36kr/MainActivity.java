@@ -16,6 +16,10 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
 
     private FragmentManager manager;
     private FragmentTransaction transaction;
+    private RadioButton radioRecommend;
+    private RadioButton radioFollow;
+    private RadioButton radioDiscover;
+    private RadioButton radioMain;
 
     @Override
     protected int getLayout() {
@@ -24,16 +28,34 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
 
     @Override
     protected void initViews() {
-        RadioButton radioRecommend = (RadioButton) findViewById(R.id.main_radio_recommend);
-        RadioButton radioFollow = bindView(R.id.main_radio_follow);
-        RadioButton radioDiscover = bindView(R.id.main_radio_discover);
-        RadioButton radioMain = bindView(R.id.main_radio_mine);
+        radioRecommend = (RadioButton) findViewById(R.id.main_radio_recommend);
+        radioFollow = bindView(R.id.main_radio_follow);
+        radioDiscover = bindView(R.id.main_radio_discover);
+        radioMain = bindView(R.id.main_radio_mine);
 
         radioRecommend.setChecked(true);
         showFirstFragment();
 
-        // 为四个RadioButton设置点击监听事件
-        setClick(this, radioRecommend, radioFollow, radioDiscover, radioMain);
+        // 监听四个RadioButton的点击事件
+        judgeRadioButtonIsChecked();
+//        setClick(this, radioRecommend, radioFollow, radioDiscover, radioMain);
+    }
+
+    private void judgeRadioButtonIsChecked() {
+
+        manager = getSupportFragmentManager();
+        transaction = manager.beginTransaction();
+
+        if (radioRecommend.isChecked()) {
+            transaction.replace(R.id.main_view, new RecommendFragment());
+
+        } else if (radioFollow.isChecked()) {
+            transaction.replace(R.id.main_view, new FollowFragment());
+
+        } else if (radioDiscover.isChecked()) {
+            transaction.replace(R.id.main_view, new DiscoverFragment());
+
+        } else if (ra)
     }
 
     private void showFirstFragment() {
