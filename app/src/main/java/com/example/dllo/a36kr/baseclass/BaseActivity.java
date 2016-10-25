@@ -1,4 +1,4 @@
-package com.example.dllo.a36kr.base;
+package com.example.dllo.a36kr.baseclass;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;

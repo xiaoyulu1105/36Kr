@@ -8,14 +8,21 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <!--空标题 1 -->
+    <!--空标题 1 全白-->
     <style name="MyAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
-    <!--空标题 2 -->
+    <!--空标题 2 全黑-->
     <style name="MyNoAppTheme." parent="Theme.AppCompat.NoActionBar"/>
+
+    <!--设置 TabLayout 文字的样式-->
+    <!--http://blog.csdn.net/wode_dream/article/details/50424446#comments-->
+    <style name="MyTabLayoutTextAppearance" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@android:color/darker_gray</item>
+    </style>
 
 </resources>

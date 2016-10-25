@@ -1,11 +1,12 @@
-package com.example.dllo.a36kr;
+package com.example.dllo.a36kr.discover;
 
-import android.support.v4.app.Fragment;
-
-import com.example.dllo.a36kr.base.BaseFragment;
+import com.example.dllo.a36kr.R;
+import com.example.dllo.a36kr.baseclass.BaseFragment;
 
 /**
  * Created by xiaoyulu on 16/10/24.
+ *
+ * 36氪 发现 对应的 Fragment 类
  */
 public class DiscoverFragment extends BaseFragment {
     @Override

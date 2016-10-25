@@ -4,7 +4,16 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
 
+    <!--主界面的RadioButton的文字颜色-->
     <color name="colorNotSelected">#c3ced8</color>
     <color name="colorIsSelected">#4381f0</color>
+
+    <!--首页选项中TabLayout的标题文字的颜色-->
+    <!--下划线也是第一个 colorRecommendTabIsSelected 颜色-->
+    <color name="colorRecommendTabIsSelected">#252525</color>
+    <color name="colorRecommendTabNotSelected">#9b9b9b</color>
+
+    <!-- 我的选项中分割线的颜色-->
+    <color name="colorMineDividedLine">#f1f1f1</color>
 
 </resources>

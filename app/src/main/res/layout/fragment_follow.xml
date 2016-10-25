@@ -1,11 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
+    <!--问题: -->
+    <!--需改进的: 布局中控件的位置有点不够兼容和合理 ?-->
+
+    <!--设置关注选项的标题-->
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="这是FollowFragment"/>
+        android:layout_height="@dimen/activity_item_height">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="关注"
+            android:textSize="@dimen/activity_item_textsize"
+            android:textColor="@color/colorRecommendTabIsSelected"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="标签管理"
+            android:textSize="@dimen/activity_item_textsize"
+            android:textColor="@color/colorRecommendTabIsSelected"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:visibility="invisible"/>
+
+    </RelativeLayout>
+    <include layout="@layout/dividedline_mine"/>
+
+    <!--关注的初始状态-->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/image_follow"
+        android:layout_gravity="center"
+        android:layout_marginTop="70dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="关注感兴趣的标签"
+        android:layout_gravity="center"
+        android:textSize="@dimen/activity_item_textsize"
+        android:layout_margin="3dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="让这里都是你想看的"
+        android:layout_gravity="center"
+        android:textSize="@dimen/activity_item_textsize"
+        android:layout_margin="5dp"
+        />
+
+    <!--需要自定义的Button-->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="去看看"
+        android:layout_gravity="center"
+        android:layout_margin="40dp"/>
 
 </LinearLayout>

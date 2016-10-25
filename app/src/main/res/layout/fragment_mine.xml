@@ -3,9 +3,80 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/activity_item_height"
+        >
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_mine_avatar"
+            android:background="@null"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="点击登录"
+            android:layout_gravity="center"
+            android:background="@null"
+            />
+    </LinearLayout>
+
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="这是MineFragment"/>
+        android:layout_height="wrap_content"
+        android:text="  我的资料"
+        android:textColor="@color/colorRecommendTabIsSelected"
+        android:drawableLeft="@mipmap/ic_mine_profile"
+        android:drawableRight="@mipmap/ic_recommend_more"
+        android:layout_margin="8dp"/>
+    <include layout="@layout/dividedline_mine"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="  我的收藏"
+        android:textColor="@color/colorRecommendTabIsSelected"
+        android:drawableLeft="@mipmap/ic_mine_favorite"
+        android:drawableRight="@mipmap/ic_recommend_more"
+        android:layout_margin="8dp"/>
+    <include layout="@layout/dividedline_mine"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="  我的资料"
+        android:textColor="@color/colorRecommendTabIsSelected"
+        android:drawableLeft="@mipmap/ic_mine_profile"
+        android:drawableRight="@mipmap/ic_recommend_more"
+        android:layout_margin="8dp"/>
+    <include layout="@layout/dividedline_mine"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="  设置"
+        android:textColor="@color/colorRecommendTabIsSelected"
+        android:drawableLeft="@mipmap/ic_mine_settings"
+        android:drawableRight="@mipmap/ic_recommend_more"
+        android:layout_margin="8dp"/>
+    <include layout="@layout/dividedline_mine"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="  意见反馈"
+        android:textColor="@color/colorRecommendTabIsSelected"
+        android:drawableLeft="@mipmap/ic_mine_feedback"
+        android:drawableRight="@mipmap/ic_recommend_more"
+        android:layout_margin="8dp"/>
+    <include layout="@layout/dividedline_mine"/>
+
 
 </LinearLayout>

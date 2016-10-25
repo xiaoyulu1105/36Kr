@@ -1,11 +1,12 @@
-package com.example.dllo.a36kr;
+package com.example.dllo.a36kr.follow;
 
-import android.support.v4.app.Fragment;
-
-import com.example.dllo.a36kr.base.BaseFragment;
+import com.example.dllo.a36kr.R;
+import com.example.dllo.a36kr.baseclass.BaseFragment;
 
 /**
  * Created by dllo on 16/10/24.
+ *
+ * 36氪 关注 对应的 Fragment 类
  */
 public class FollowFragment extends BaseFragment {
     @Override

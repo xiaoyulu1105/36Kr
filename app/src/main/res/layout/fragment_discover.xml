@@ -3,6 +3,23 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <!--设置发现选项的标题-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_item_height">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发现"
+            android:textSize="@dimen/activity_item_textsize"
+            android:textColor="@color/colorRecommendTabIsSelected"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            />
+    </RelativeLayout>
+    <include layout="@layout/dividedline_mine"/>
+
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
