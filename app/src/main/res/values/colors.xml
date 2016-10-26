@@ -14,6 +14,7 @@
     <color name="colorRecommendTabNotSelected">#9b9b9b</color>
 
     <!-- 我的选项中分割线的颜色-->
+    <!-- 也用在了关注项初始化也的去看看button文字上-->
     <color name="colorMineDividedLine">#f1f1f1</color>
 
 </resources>

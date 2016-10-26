@@ -1,0 +1,9 @@
+
+1. 使用 Gson 实现网络请求 需要下插件, 导包
+下插件:
+command + 逗号 -> plugins, 搜索Gson
+导包:
+command + 分号, 搜需 gson -> 2.7
+
+2. 使用TabLayout需要导包
+ design 包

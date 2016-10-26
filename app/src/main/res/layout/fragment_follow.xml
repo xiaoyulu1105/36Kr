@@ -60,7 +60,10 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@mipmap/bt_follow"
         android:text="去看看"
+        android:textSize="@dimen/activity_item_textsize"
+        android:textColor="@color/colorMineDividedLine"
         android:layout_gravity="center"
         android:layout_margin="40dp"/>
 

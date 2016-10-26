@@ -8,10 +8,11 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/MyAppTheme">
-        <activity android:name=".main.MainActivity">
+        <activity android:name=".main.MainActivity"></activity>
+        <activity android:name=".main.StartActivity">
 
         </activity>
-        <activity android:name=".main.StartActivity">
+        <activity android:name=".mine.MinePhoneLoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

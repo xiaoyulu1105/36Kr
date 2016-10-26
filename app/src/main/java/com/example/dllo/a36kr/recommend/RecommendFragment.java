@@ -40,6 +40,8 @@ public class RecommendFragment extends BaseFragment {
         adapter.setFragmentArrayList(fragmentArrayList);
 
         viewPager.setAdapter(adapter);
+        // 设置选用第二个标题
+        viewPager.setCurrentItem(1);
         tabLayout.setupWithViewPager(viewPager);
 
         // 设置 tabLayout 文字的大小, 在布局文件中实现
