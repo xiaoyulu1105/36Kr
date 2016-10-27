@@ -6,7 +6,13 @@
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:text="这是首页选项中的早期项目选项"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recommend_earlyworks_listview">
+    </ListView>
 
 </LinearLayout>

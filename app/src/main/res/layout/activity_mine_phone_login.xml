@@ -8,6 +8,7 @@
 
     <!--我的选项, 点击登录后跳转到的界面-->
     <ImageButton
+        android:id="@+id/mine_phonelogin_returnimgbtn"
         android:layout_width="wrap_content"
         android:layout_height="@dimen/activity_item_height"
         android:src="@mipmap/ic_common_close_black"
@@ -25,22 +26,36 @@
         android:layout_marginRight="@dimen/mine_phonelogin_blankwidth"
         android:layout_marginTop="10dp"
         >
-        <TextView
+        <ImageButton
+            android:id="@+id/mine_phonelogin_getnumber_picimgbtn"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:drawableLeft="@mipmap/icon_phone"
+            android:src="@mipmap/icon_phone"
+            android:background="@null"
+            />
+        <TextView
+            android:id="@+id/mine_phonelogin_getnumber_prenumtv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/mine_button_paddingbotton"
+            android:paddingRight="@dimen/mine_button_paddingbotton"
             android:text="+86"
             android:gravity="center"
+            android:clickable="true"
             />
 
         <EditText
+            android:id="@+id/mine_phonelogin_getnumber_numedt"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="match_parent"
             android:hint="手机号"
+            android:paddingLeft="@dimen/mine_button_paddingbotton"
             android:background="@null"
+            android:singleLine="true"
             />
         <ImageButton
+            android:id="@+id/mine_phonelogin_delimgbtn"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:src="@mipmap/icon_del_all_highlight"
@@ -65,16 +80,20 @@
             />
 
         <EditText
+            android:id="@+id/mine_phonelogin_getcode_edt"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="match_parent"
             android:hint="手机验证码"
+            android:paddingLeft="@dimen/mine_button_paddingbotton"
             android:background="@null"
+            android:singleLine="true"
             />
         <TextView
             android:layout_width="40dp"
             android:layout_height="match_parent" />
         <Button
+            android:id="@+id/mine_phonelogin_getcode_btn"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="获取验证码"
@@ -103,6 +122,7 @@
                 android:hint="您也可以尝试"
                 android:gravity="center"
                 android:layout_gravity="right"
+                android:paddingRight="5dp"
                 />
         </LinearLayout>
         <Button
@@ -121,9 +141,11 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
         <Button
+            android:id="@+id/mine_phonelogin_login_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="快速登录"
+            android:paddingBottom="@dimen/mine_button_paddingbotton"
             android:textColor="@color/colorMineDividedLine"
             android:background="@mipmap/bt_follow"
             android:layout_gravity="center"
@@ -145,6 +167,7 @@
         android:layout_gravity="center"
         android:layout_marginBottom="@dimen/mine_phonelogin_blankwidth">
         <Button
+            android:id="@+id/mine_phonelogin_login_wechatbtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:drawableTop="@mipmap/ic_login_wechat"
@@ -155,6 +178,7 @@
             />
 
         <Button
+            android:id="@+id/mine_phonelogin_login_krbtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:drawableTop="@mipmap/ic_login_kr"
@@ -176,6 +200,7 @@
             android:layout_height="wrap_content"
             android:hint="登录代表您已阅读并同意"/>
         <TextView
+            android:id="@+id/mine_phonelogin_agreementtv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="36氪网络协议"
@@ -187,10 +212,12 @@
             android:layout_height="wrap_content"
             android:hint="和"/>
         <TextView
+            android:id="@+id/mine_phonelogin_secrettv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="隐私条例"
             android:textColor="@color/colorRecommendTabIsSelected"
+            android:clickable="true"
             />
     </LinearLayout>
 

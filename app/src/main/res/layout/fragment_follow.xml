@@ -62,6 +62,7 @@
         android:layout_height="wrap_content"
         android:background="@mipmap/bt_follow"
         android:text="去看看"
+        android:paddingBottom="@dimen/mine_button_paddingbotton"
         android:textSize="@dimen/activity_item_textsize"
         android:textColor="@color/colorMineDividedLine"
         android:layout_gravity="center"

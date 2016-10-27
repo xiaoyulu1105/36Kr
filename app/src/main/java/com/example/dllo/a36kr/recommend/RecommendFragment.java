@@ -1,12 +1,12 @@
 package com.example.dllo.a36kr.recommend;
 
-import android.graphics.Color;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 
 import com.example.dllo.a36kr.R;
 import com.example.dllo.a36kr.baseclass.BaseFragment;
+import com.example.dllo.a36kr.recommend.earlyworks.RecommendEarlyworksFragment;
 
 import java.util.ArrayList;
 

@@ -2,7 +2,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.dllo.a36kr">
 
+    <!--添加的 访问权限-->
+    <!--网络请求权限-->
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <!--android:name=".tools.MyApp": 是注册自定义的 Application-->
     <application
+        android:name=".volley.MyApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -10,14 +16,14 @@
         android:theme="@style/MyAppTheme">
         <activity android:name=".main.MainActivity"></activity>
         <activity android:name=".main.StartActivity">
-
-        </activity>
-        <activity android:name=".mine.MinePhoneLoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".mine.MinePhoneLoginActivity">
+
         </activity>
     </application>
 

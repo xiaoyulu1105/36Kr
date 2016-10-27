@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/mine_button_paddingbotton">
+
+    <ImageView
+        android:id="@+id/item_recommend_earlyworks_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@mipmap/ic_launcher"
+        android:layout_marginRight="@dimen/mine_button_paddingbotton"
+        />
+
+    <!--右边的文字布局-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <TextView
+            android:id="@+id/item_recommend_earlyworks_titletv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="标题"
+            android:textSize="@dimen/activity_item_textsize"/>
+        <TextView
+            android:id="@+id/item_recommend_earlyworks_tagtv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="所属标签"
+            android:layout_alignParentBottom="true"/>
+        <TextView
+            android:id="@+id/item_recommend_earlyworks_timetv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发布时间"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

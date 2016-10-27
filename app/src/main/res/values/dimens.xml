@@ -12,4 +12,7 @@
     <!--设置我的选项 手机登录界面 的 输手机号那一行的左右空白间距-->
     <dimen name="mine_phonelogin_blankwidth">20dp</dimen>
 
+    <!--设置 Button 的paddingBottom 属性的值-->
+    <dimen name="mine_button_paddingbotton">15dp</dimen>
+
 </resources>

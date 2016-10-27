@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<!--画了一条横向分割线-->
+<!--画一条纵向的分隔线-->
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="2dp"
+    android:orientation="horizontal"
+    android:layout_width="2dp"
+    android:layout_height="match_parent"
     android:background="@color/colorMineDividedLine"
     >
 </LinearLayout>
