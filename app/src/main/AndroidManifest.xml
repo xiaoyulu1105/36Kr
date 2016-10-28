@@ -6,6 +6,9 @@
     <!--网络请求权限-->
     <uses-permission android:name="android.permission.INTERNET"/>
 
+    <!-- if you want to load images from a file OR from the internet -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <!--android:name=".tools.MyApp": 是注册自定义的 Application-->
     <application
         android:name=".volley.MyApp"

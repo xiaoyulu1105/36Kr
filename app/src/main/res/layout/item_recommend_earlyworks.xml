@@ -2,8 +2,9 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="horizontal"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_margin="@dimen/mine_button_paddingbotton">
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+    >
 
     <ImageView
         android:id="@+id/item_recommend_earlyworks_iv"

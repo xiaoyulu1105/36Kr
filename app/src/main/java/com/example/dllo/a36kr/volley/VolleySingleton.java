@@ -27,7 +27,7 @@ public class VolleySingleton {
     private static VolleySingleton volleySingleton;
 
     private RequestQueue requestQueue;
-    private ImageLoader imageLoader;
+    private ImageLoader imageLoader; // 用来请求图片的 ImageLoader类
 
     private VolleySingleton() {
         requestQueue = Volley.newRequestQueue(MyApp.getContext());
@@ -36,7 +36,7 @@ public class VolleySingleton {
 
     public static VolleySingleton getInstance() {
         if (volleySingleton == null) {
-            synchronized (VolleySingleton.class) {
+            synchronized (VolleySingleton.class) { // 同步锁
                 if (volleySingleton == null) {
                     volleySingleton = new VolleySingleton();
                 }
@@ -46,16 +46,7 @@ public class VolleySingleton {
         return volleySingleton;
     }
 
-    // 获得RequestQueue
-    public RequestQueue getRequestQueue(){
-        return requestQueue;
-    }
-
-    // 向请求队列 添加 请求
-    public <T> void addRequest(Request<T> request){
-        requestQueue.add(request);
-    }
-
+    // 请求图片
     public void getImage(String url, ImageView imageView) {
         // 带渐变动画效果的请求图片
         imageLoader.get(url, new AnimImageListener(imageView));
@@ -83,7 +74,7 @@ public class VolleySingleton {
 
                 // 可以自定义添加动画效果, 这里实现了透明度渐变的动画效果
                 AlphaAnimation alphaAnimation = new AlphaAnimation(0, 1f);
-                alphaAnimation.setDuration(3000);
+                alphaAnimation.setDuration(1500);
                 mImageView.setAnimation(alphaAnimation);
                 alphaAnimation.start();
             }
@@ -94,4 +85,15 @@ public class VolleySingleton {
 
         }
     }
+
+    // 获得RequestQueue
+    public RequestQueue getRequestQueue(){
+        return requestQueue;
+    }
+
+    // 向请求队列 添加 请求
+    public <T> void addRequest(Request<T> request){
+        requestQueue.add(request);
+    }
+
 }

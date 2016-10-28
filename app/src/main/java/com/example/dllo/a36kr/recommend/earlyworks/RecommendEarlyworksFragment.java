@@ -45,6 +45,8 @@ public class RecommendEarlyworksFragment extends BaseFragment {
 
         myGsonMethod();
 
+
+
     }
 
     /* 将Gson相关的请求代码写在该方法内 */
@@ -61,13 +63,10 @@ public class RecommendEarlyworksFragment extends BaseFragment {
             @Override
             public void onResponse(EarlyWorksBean response) {
 
-                Log.d("RecommfffffieorksFrag", "response:" + response); // 不打印
-
                 // 请求成功
                 earlyWorksBean = response;
                 dataBean1ArrayList = (ArrayList<EarlyWorksBean.DataBean.DataBean1>) response.getData().getData();
 
-              //  Log.d("RecommendEarlyworksFrag", "dataBean1ArrayList.size():" + dataBean1ArrayList.size()); // 0
                 MyEarlyWorksLvAdapter adapter = new MyEarlyWorksLvAdapter(getActivity());
                 adapter.setDataBean1ArrayList(dataBean1ArrayList);
                 listView.setAdapter(adapter);
