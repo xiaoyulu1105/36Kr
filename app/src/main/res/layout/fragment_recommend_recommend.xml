@@ -3,10 +3,20 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
+    
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:text="这是首页选项中的推荐选项"/>
+    
+    <!--布局说明: 用ListView 在其上面加上头布局即可-->
+    
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recommend_recommend_listview"
+        android:divider="#00000000"
+        >
+    </ListView>
 
 </LinearLayout>

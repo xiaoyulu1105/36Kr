@@ -6,6 +6,8 @@ import android.support.v4.view.ViewPager;
 
 import com.example.dllo.a36kr.R;
 import com.example.dllo.a36kr.baseclass.BaseFragment;
+import com.example.dllo.a36kr.recommend.newsflash.RecommendNewsflashFragment;
+import com.example.dllo.a36kr.recommend.recommend.RecommendRecommendFragment;
 import com.example.dllo.a36kr.recommend.earlyworks.RecommendEarlyworksFragment;
 
 import java.util.ArrayList;

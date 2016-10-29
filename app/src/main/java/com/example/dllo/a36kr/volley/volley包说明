@@ -1,0 +1,5 @@
+
+Vollley 是进行数据请求的 封装类
+Vollley 需要导包
+它将的 运用也会涉及到 Gson
+Gson 需要 下插件和导包

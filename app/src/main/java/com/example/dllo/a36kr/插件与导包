@@ -10,7 +10,12 @@ command + 分号, 搜需 gson -> 2.7
 
 3. Volley 数据请求 需要导包, 4floor 的那个
 
-4. 使用第三方 实现 轮播图 需要 添加依赖
+4. 使用第三方 实现 轮播图 需要 添加依赖 和 权限
 compile 'com.youth.banner:banner:1.4.1'
 compile 'com.github.bumptech.glide:glide:3.7.0'
+
+5. 第三方LiteOrm 创建数据库 需要jar 包
+Lite 学习网址:  http://litesuits.com/index.html
+
+
 

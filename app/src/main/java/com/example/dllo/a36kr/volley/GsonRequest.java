@@ -28,11 +28,11 @@ public class GsonRequest<T> extends Request<T>{
 
         // 对成功的监听进行赋值
         this.tListener = tListener;
+
         this.gson = new Gson();
         this.tClass = tClass;
 
     }
-
 
     /* 自定义的又一个 构造方法 */
     public GsonRequest(Class<T> tClass, String url,

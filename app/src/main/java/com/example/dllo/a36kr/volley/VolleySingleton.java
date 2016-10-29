@@ -46,8 +46,33 @@ public class VolleySingleton {
         return volleySingleton;
     }
 
-    // 请求图片
-    public void getImage(String url, ImageView imageView) {
+    // 请求图片 方法1
+    public void getImage(String url, final ImageView imageView) {
+        // 不带 动画效果的请求图片
+
+        imageLoader.get(url, new ImageLoader.ImageListener() {
+            @Override
+            public void onResponse(ImageLoader.ImageContainer response, boolean isImmediate) {
+                Bitmap bitmap = response.getBitmap();
+                if (bitmap == null) {
+                    // 图片还在请求中, 先给一张默认的图片
+                    imageView.setImageResource(R.mipmap.ic_common_placeholder_nodata);
+                } else {
+                    // 图片请求成功
+                    imageView.setImageBitmap(bitmap);
+                }
+            }
+
+            @Override
+            public void onErrorResponse(VolleyError error) {
+
+            }
+        });
+    }
+
+
+    // 请求图片 方法2 带有动画效果
+    public void getAnimImage(String url, ImageView imageView) {
         // 带渐变动画效果的请求图片
         imageLoader.get(url, new AnimImageListener(imageView));
     }

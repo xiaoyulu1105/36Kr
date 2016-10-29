@@ -7,7 +7,7 @@
     >
 
     <ImageView
-        android:id="@+id/item_recommend_earlyworks_iv"
+        android:id="@+id/item_recommend_recommend_iv"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:src="@mipmap/ic_launcher"
@@ -20,7 +20,7 @@
         android:layout_height="match_parent"
         >
         <TextView
-            android:id="@+id/item_recommend_earlyworks_titletv"
+            android:id="@+id/item_recommend_recommend_titletv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
@@ -28,19 +28,11 @@
             android:textColor="@color/colorRecommendTabIsSelected"
             android:textSize="@dimen/activity_item_textsize"/>
         <TextView
-            android:id="@+id/item_recommend_earlyworks_tagtv"
+            android:id="@+id/item_recommend_recommend_tagtv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="所属标签"
             android:layout_alignParentBottom="true"/>
-        <TextView
-            android:id="@+id/item_recommend_earlyworks_timetv"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="发布时间"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentRight="true"
-            />
     </RelativeLayout>
 
 </LinearLayout>

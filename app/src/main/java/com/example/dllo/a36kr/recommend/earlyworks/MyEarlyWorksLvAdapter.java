@@ -65,6 +65,7 @@ public class MyEarlyWorksLvAdapter extends BaseAdapter{
         // 没有找到所属标签, 例如: 文娱, ! ! !
         String imgUrl = dataBean1ArrayList.get(position).getFeatureImg();
         String title = dataBean1ArrayList.get(position).getTitle();
+        String tag = dataBean1ArrayList.get(position).getColumnName();
         long time = dataBean1ArrayList.get(position).getPublishTime();
 
         // 将 时间戳 格式进行修改
@@ -72,8 +73,10 @@ public class MyEarlyWorksLvAdapter extends BaseAdapter{
         String finalTime = sdf.format(new Date(time));
 
         // 使用Volley请求图片, 并进行铺建
+        // Title 铺建 不成功
         VolleySingleton.getInstance().getImage(imgUrl, viewHolder.imageView);
         viewHolder.titleTv.setText(title);
+        viewHolder.tagTv.setText(tag);
         viewHolder.timeTv.setText(finalTime);
 
         return convertView;

@@ -45,8 +45,6 @@ public class RecommendEarlyworksFragment extends BaseFragment {
 
         myGsonMethod();
 
-
-
     }
 
     /* 将Gson相关的请求代码写在该方法内 */
